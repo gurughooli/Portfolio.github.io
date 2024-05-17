@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        h1{
+            color: #3498DB;
+            margin-left: 100px;
+            font-size: 40px;
+            font-family: cursive;
+        }
+        div{
+            color: #3498DB;
+            border: 1px solid #17202A; 
+            width: 50%;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        img{
+            width: 450px;
+            height: 450px;
+            border-radius: 1000px;
+        }
+        .container {
+  position: relative;
+  width: 30px; /* Adjust as per your image size */
+  height: 30px; /* Adjust as per your image size */
+  margin-left: 870px;
+  margin-top: -800px;
+}
+
+.moving-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: moveImage 5s linear infinite; /* Adjust animation duration and timing function as needed */
+}
+
+@keyframes moveImage {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 500px; /* Adjust distance to move horizontally */
+  }
+  100% {
+    top: 0;
+  }
+}
+#home{
+            background-color: #d7e6f0;
+            width: 6%;
+            text-align: center;
+            margin-left: 1300px;
+            margin-top: -25px;
+        }
+        #home:hover{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body style="background-color: #17202A;">
+    <h1>Skills</h1>
+    <p id="home"><a href="index.html" style="color:black;font-size: 20px; ">Home</a></p>
+    <div>
+    <ol>
+        <li style="color: #F39C12; font-size: 25px;">Core Java</li>
+        <ul>
+            <li>Proficient in Core Java programming language, with experience in object-oriented programming (OOP) concepts such as inheritance, polymorphism, and encapsulation.</li>
+            <li>Good knowledge in concepts like Exception Handling, MultiThreading</li>
+        </ul><br>
+        <li style="color: #F39C12; font-size: 25px;">MYSQL</li>
+        <ul>
+            <li>Experienced in relational database management systems (RDBMS), with a focus on MySQL.</li>
+            <li>Designed and implemented normalized database schemas, wrote complex SQL queries for data manipulation and retrieval, and optimized database performance.
+            </li>
+        </ul><br>
+        <li style="color: #F39C12; font-size: 25px;">HTML and CSS</li>
+        <ul>
+            <li>Proficient in HTML5 and CSS for creating responsive and visually appealing web interfaces.</li>
+            <li>Designed and developed multiple web pages and interfaces using semantic HTML markup and CSS styling</li>
+        </ul><br>
+        <li style="color: #F39C12; font-size: 25px;">JDBC(Java Database Connectivity)</li>
+        <ul>
+            <li>Competent in using JDBC to interact with databases from Java applications.</li>
+            <li>Developed Java applications that connect to MySQL databases using JDBC, performed CRUD (Create, Read, Update, Delete) operations, and handled transactions effectively.</li>
+        </ul>
+    </ol>
+</div>
+<div class="container">
+    <img src="Skills.jpg" alt="Moving Image" class="moving-image">
+</body>
+</html>
